@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")()
 
-const number1 = prompt("Enter number 1: ")
-const number2 = prompt("Enter number 2: ")
+const number1 = parseFloat(prompt("Enter number 1: "))
+const number2 = parseFloat(prompt("Enter number 2: "))
 const operator = prompt("Enter sign: ")
 
 let result;
