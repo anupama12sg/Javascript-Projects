@@ -4,5 +4,8 @@ console.log("Hello", name, "welcome to our game!")
 
 const shouldWePlay = prompt("Do you want to play?")
 
-const condition = shouldWePlay.toLowerCase() === "yes"
-console.log(condition)
+if (shouldWePlay.toLowerCase() === "yes") {
+    console.log("Okay we will play!")
+} else {
+    console.log("Exit")
+}
