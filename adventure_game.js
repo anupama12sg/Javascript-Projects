@@ -1,2 +1,3 @@
 const prompt = require("prompt-sync")()
-prompt ("What is your name? ")
+const name = prompt ("What is your name? ")
+console.log(name)
