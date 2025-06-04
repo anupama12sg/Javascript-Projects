@@ -7,7 +7,7 @@ const operator = prompt("Enter sign: ")
 let result;
 switch (operator) {
     case "+":
-        result = number1 + number2
+        result = number1 + number2     //8 + 9 = 89
         console.log(result)
         break;
     case "-":
