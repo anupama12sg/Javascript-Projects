@@ -5,6 +5,7 @@ const number2 = parseFloat(prompt("Enter number 2: "))
 const operator = prompt("Enter sign: ")
 
 let result;
+let valid = true; 
 switch (operator) {
     case "+":
         result = number1 + number2     //8 + 9 = 89
@@ -20,7 +21,9 @@ switch (operator) {
         break;
     default:
         console.log("Invalid")
+        valid = false;
         break;
 }
-console.log(result)
+if (valid) 
+    console.log(number1, operator, number2, "=", result)
 
