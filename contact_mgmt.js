@@ -13,7 +13,6 @@ function printInfo() {
 printInfo()
 
 let keepGoing = true;
-
 while (keepGoing) {
     const number = prompt("Enter an operation (1-5): ")
     switch (number) {
