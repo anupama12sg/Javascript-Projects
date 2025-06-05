@@ -12,6 +12,7 @@ function printInfo() {
 
 printInfo()
 
+while (true) {
 const number = prompt("Enter an operation (1-5): ")
 switch (number) {
     case "1":
@@ -32,4 +33,5 @@ switch (number) {
     default:
         console.log("Unknown")
         break;
+}
 }
