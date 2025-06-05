@@ -12,26 +12,29 @@ function printInfo() {
 
 printInfo()
 
-while (true) {
-const number = prompt("Enter an operation (1-5): ")
-switch (number) {
-    case "1":
-        break;
+let keepGoing = true;
 
-    case "2":
-        break;
+while (keepGoing) {
+    const number = prompt("Enter an operation (1-5): ")
+    switch (number) {
+        case "1":
+            break;
 
-    case "3":
-        break;
+        case "2":
+            break;
 
-    case "4":
-        break;
+        case "3":
+            break;
 
-    case "5":
-        break;
+        case "4":
+            break;
 
-    default:
-        console.log("Unknown")
-        break;
-}
+        case "5":
+            keepGoing = false;
+            break;
+
+        default:
+            console.log("Unknown")
+            break;
+    }
 }
