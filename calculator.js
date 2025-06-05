@@ -46,3 +46,7 @@ switch (operator) {
 }
 if (valid)
     console.log(number1, operator, number2, "=", result)
+
+function getNumber(numberString) {
+
+}
