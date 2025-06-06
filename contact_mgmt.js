@@ -6,8 +6,24 @@ function printInfo() {
     console.log("1. Add a contact")
     console.log("2. Delete a contact")
     console.log("3. View Contacts")
-    console.log("Search Contacts")
+    console.log("4. Search Contacts")
     console.log("5. Exit")
+}
+
+function addContact() {
+
+}
+
+function deleteContact() {
+
+}
+
+function searchContact() {
+
+}
+
+function listContact(contacts) {
+
 }
 
 printInfo()
@@ -36,4 +52,4 @@ while (keepGoing) {
             console.log("Unknown")
             break;
     }
-}
+} 
