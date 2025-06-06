@@ -29,8 +29,10 @@ function searchContact() {
 }
 
 function listContacts(contacts) {
-    for (let contact of contacts){
-        
+    for (let contact of contacts) {
+        console.log("----------------")
+        console.log("Name:", contact.name)
+        console.log("Email", contact.email)
     }
 }
 
