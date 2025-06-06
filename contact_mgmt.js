@@ -11,7 +11,13 @@ function printInfo() {
 }
 
 function addContact() {
-
+    const name = prompt("Name: ")
+    const email = prompt("Email: ")
+    const contact = {
+        name: name,
+        email: email
+    }
+    contacts.push(contact)
 }
 
 function deleteContact() {
@@ -22,10 +28,11 @@ function searchContact() {
 
 }
 
-function listContact(contacts) {
-
+function listContacts(contacts) {
+    console.log(contacts)
 }
 
+const contacts = []
 printInfo()
 
 let keepGoing = true;
@@ -41,7 +48,7 @@ while (keepGoing) {
             break;
 
         case "3":
-            listContact()
+            listContacts(contacts)       //pass contacts
             break;
 
         case "4":
