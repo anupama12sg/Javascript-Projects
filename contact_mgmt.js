@@ -33,15 +33,19 @@ while (keepGoing) {
     const number = prompt("Enter an operation (1-5): ")
     switch (number) {
         case "1":
+            addContact()
             break;
 
         case "2":
+            deleteContact()
             break;
 
         case "3":
+            listContact()
             break;
 
         case "4":
+            searchContact()
             break;
 
         case "5":
