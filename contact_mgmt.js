@@ -29,7 +29,9 @@ function searchContact() {
 }
 
 function listContacts(contacts) {
-    console.log(contacts)
+    for (let contact of contacts){
+        
+    }
 }
 
 const contacts = []
