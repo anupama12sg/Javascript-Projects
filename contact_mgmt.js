@@ -18,6 +18,7 @@ function addContact() {
         email: email
     }
     contacts.push(contact)
+    console.log("Added!")
 }
 
 function deleteContact() {
@@ -42,6 +43,7 @@ printInfo()
 let keepGoing = true;
 while (keepGoing) {
     const number = prompt("Enter an operation (1-5): ")
+    console.log()
     switch (number) {
         case "1":
             addContact()
