@@ -41,7 +41,7 @@ function searchContact() {
     const result = [];
 
     for (let contact of contacts) {
-        if (contact.name.includes(searchString)) result.push(contact)
+        if (contact.name.toLowerCase().includes(searchString)) result.push(contact)
     }
 listContacts(result)
 }
