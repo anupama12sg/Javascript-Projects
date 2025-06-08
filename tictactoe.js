@@ -21,7 +21,14 @@ const board = [
     [" ", " ", " "]
 ]
 
-makeMove("X", board)
-console.log(board)
-makeMove("O", board)
-console.log(board)
+let turn = "X";
+let turnCount = 0;
+
+while (turnCount < 9) {
+    makeMove(turn, board)
+    console.log(board)
+
+    if (turn === "X") turn = "O"
+    else turn = "X"
+    turnCount++;
+}
