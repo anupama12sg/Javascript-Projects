@@ -28,6 +28,9 @@ function printBoard(board) {
     }
 }
 
+function checkWin(board) {
+
+}
 
 const board = [
     [" ", " ", " "],
@@ -41,9 +44,11 @@ let turnCount = 0;
 printBoard(board)
 console.log()
 while (turnCount < 9) {
+    console.log(turn, "players turn.")
     makeMove(turn, board)
     printBoard(board)
     console.log()
+
 
     if (turn === "X") turn = "O"
     else turn = "X"
