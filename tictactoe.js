@@ -28,7 +28,7 @@ function printBoard(board) {
     }
 }
 
-function checkWin(board) {
+function checkWin(board, turn) {
     const lines = [
         [[0, 0], [0, 1], [0, 2]],        //row 0
         [[1, 0], [1, 1], [1, 2]],        //row 1
@@ -36,8 +36,21 @@ function checkWin(board) {
         [[0, 0], [1, 0], [2, 0]],         //col 0
         [[0, 1], [1, 1], [2, 1]],         //col 1
         [[0, 2], [1, 2], [2, 2]],         //col 2
-        [[0, 0], [1, 1], [2, 2]]          //left to right diagonal  
+        [[0, 0], [1, 1], [2, 2]],          //diagonal 1
+        [[0, 2], [1, 1], [2, 0]]           //diagonal 2 
     ]
+    for (let line of lines) {
+        let win = true;
+        for (let pos of line) {
+            const [row, col] = pos
+            if (board[row][col] !== turn) {
+                win = false
+                break
+            }
+        }
+        if (win) return true
+    }
+    return false
 }
 
 const board = [
@@ -56,6 +69,11 @@ while (turnCount < 9) {
     makeMove(turn, board)
     printBoard(board)
     console.log()
+    const win = checkWin(board, turn)
+    if (win) {
+        console.log(turn, "has won!")
+        break;
+    }
 
 
     if (turn === "X") turn = "O"
