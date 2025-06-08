@@ -13,7 +13,6 @@ function makeMove(turn, board) {
             break
         }
     }
-
 }
 
 const board = [
@@ -22,3 +21,7 @@ const board = [
     [" ", " ", " "]
 ]
 
+makeMove("X", board)
+console.log(board)
+makeMove("O", board)
+console.log(board)
