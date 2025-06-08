@@ -29,7 +29,15 @@ function printBoard(board) {
 }
 
 function checkWin(board) {
-
+    const lines = [
+        [[0, 0], [0, 1], [0, 2]],        //row 0
+        [[1, 0], [1, 1], [1, 2]],        //row 1
+        [[2, 0], [2, 1], [2, 2]],         //row 2
+        [[0, 0], [1, 0], [2, 0]],         //col 0
+        [[0, 1], [1, 1], [2, 1]],         //col 1
+        [[0, 2], [1, 2], [2, 2]],         //col 2
+        [[0, 0], [1, 1], [2, 2]]          //left to right diagonal  
+    ]
 }
 
 const board = [
