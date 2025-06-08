@@ -61,6 +61,7 @@ const board = [
 
 let turn = "X";
 let turnCount = 0;
+let win = false;
 
 printBoard(board)
 console.log()
@@ -69,7 +70,7 @@ while (turnCount < 9) {
     makeMove(turn, board)
     printBoard(board)
     console.log()
-    const win = checkWin(board, turn)
+    win = checkWin(board, turn)
     if (win) {
         console.log(turn, "has won!")
         break;
@@ -80,3 +81,5 @@ while (turnCount < 9) {
     else turn = "X"
     turnCount++;
 }
+
+if (!win) console.log("Tie game!")
